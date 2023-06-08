@@ -14,6 +14,10 @@ app.get("/another-route", (_req, res) => {
   res.sendFile(path.join(__dirname, "/another-route.html"));
 });
 
+app.get("/third-route", (_req, res) => {
+  res.sendFile(path.join(__dirname, "/third-route.html"));
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
